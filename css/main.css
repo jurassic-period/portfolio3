@@ -241,7 +241,18 @@ button, button:hover, button:focus, button:active {
     font-size: 17px;
     text-align: center;
     padding-top: 11px;
-    
+}
+.data__facebook i:hover {
+    background: #3b5998;
+    color: #fff;
+}
+.data__twitter i:hover {
+    background: #04bedf;
+    color: #fff;
+}
+.data__linked i:hover {
+    background: #0274b3;
+    color: #fff;
 }
 
 /* ---------------------- Fifth Screen ---------------------- */
