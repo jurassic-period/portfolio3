@@ -112,7 +112,6 @@ button, button:hover, button:focus, button:active {
     font-weight: 700;
 }
 .menu {
-    width: 100%;
     margin-top: 10px;
 }
 .menu__item {
@@ -343,7 +342,7 @@ button, button:hover, button:focus, button:active {
 }
 
 /* 768-992px */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .logo {
         margin: 0 auto;
         width: 160px;
@@ -368,7 +367,7 @@ button, button:hover, button:focus, button:active {
     
 }
 /* 576-768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.menu li a:hover:after {
         display: none; 
      }
@@ -393,10 +392,16 @@ button, button:hover, button:focus, button:active {
     .important__quote {
         font-size: 29px;
     }
+    .offer__text {
+        width: 100%;
+    }
+    .nav {
+        display: none;
+    }
 }
 
 /* 320-576px */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
 	.nav {
         display: none;
     }
@@ -421,5 +426,11 @@ button, button:hover, button:focus, button:active {
     }
     .footer__card {
         padding-bottom: 50px;
+    }
+    .feature__text {
+        padding: 0;
+    }
+    h1 {
+        margin-top: 124px;
     }
 }
