@@ -18,11 +18,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #2d3033;
 }
 h1 {
-    color: #fff;
+    color: #E6E6FA;
     font-size: 45px;
     text-transform: uppercase;
     font-weight: 700;
-    margin-top: 184px;
+    margin-top: 177px;
+    text-shadow: 3px 0 rgba(250, 111, 142, .5), 6px 0 rgba(250, 111, 142, .4), 9px 0 rgba(250, 111, 142, .3), 12px 0 rgba(250, 111, 142, .2), 15px 0 rgba(250, 111, 142, .1);
 }
 h2 {
     font-size: 28px;
@@ -93,12 +94,20 @@ button, button:hover, button:focus, button:active {
 /* ---------------------- First Screen ---------------------- */
 .header {
     background: url('../images/bg.jpg') no-repeat center top / cover;
+    background-color: rgba(13, 11, 23, 0.11);
+    background-blend-mode: darken;
     color: #fff;
-    background-color: rgba(13, 11, 23, 0.78);
-    background-blend-mode: hard-light;
     padding: 28px 0 243px 0;
-
+    -webkit-animation: nebulahero 5s infinite linear;
 }
+
+.div {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+@-webkit-keyframes nebulahero {
+	0% {-webkit-filter: hue-rotate(0deg);}
+	100% {-webkit-filter: hue-rotate(-360deg);}
+}
+
+
 .logo {
     font-size: 30px;
     color: #ffffff;
@@ -113,23 +122,23 @@ button, button:hover, button:focus, button:active {
 }
 .menu {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 11px;
 }
 .menu__item {
     position: relative;
 }
 .menu li a {
-    color: #ffffff;
+    color: #E6E6FA;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 16px;
 }
 .menu li a:hover:after {
    content: '';
    display: block;
    height: 3px;
-   width: 142px;
+   width: 148px;
    position: absolute;
-   margin-top: 38px;
+   margin-top: 37px;
    background: #e84545;
    left: -66px;
 }
@@ -144,11 +153,13 @@ button, button:hover, button:focus, button:active {
 }
 .offer__text {
     font-size: 22px;
+    color: #E6E6FA;
     margin: 0 auto;
     margin-top: 32px;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
     line-height: 1.5em;
     width: 563px;
+    text-shadow: 3px 0 rgba(250, 111, 142, .5), 6px 0 rgba(250, 111, 142, .4), 9px 0 rgba(250, 111, 142, .3), 12px 0 rgba(250, 111, 142, .2), 15px 0 rgba(250, 111, 142, .1);
 }
 
 /* ---------------------- Second Screen ---------------------- */
@@ -242,7 +253,18 @@ button, button:hover, button:focus, button:active {
     font-size: 17px;
     text-align: center;
     padding-top: 11px;
-    
+}
+.fa-facebook-f:hover {
+    background: #3b5998;
+    color: #fff;
+}
+.fa-twitter:hover {
+    background: #04bedf;
+    color: #fff;
+}
+.fa-linkedin:hover {
+    background: #0274b3;
+    color: #fff;
 }
 
 /* ---------------------- Fifth Screen ---------------------- */
